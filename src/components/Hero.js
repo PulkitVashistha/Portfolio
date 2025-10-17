@@ -1,10 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import profilePic from "../assets/profile.JPG";
+import resumePdf from "../assets/resume.pdf";
 
 export default function Hero() {
   return (
-    <div className="w-full bg-indigo-50 pt-28 pb-10"> {/* Light section color */}
+    <div className="w-full bg-indigo-50 pt-28 pb-10"> 
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center">
         {/* Text Section: LEFT */}
         <div className="flex-1 flex flex-col md:items-start items-center">
@@ -56,7 +57,7 @@ export default function Hero() {
           />
           {/* Properly centered, below the image */}
           <motion.a
-            href="/resume.pdf"
+            href={resumePdf}
             download
             className="
               mt-7

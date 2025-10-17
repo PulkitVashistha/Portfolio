@@ -9,7 +9,27 @@ const projects = [
       "Managed go-live, implemented DeepL translation and SEO-friendly dispatcher configurations.",
     tech: ["AEMaaCS", "DeepL", "Dispatcher"],
   },
-  // Add other projects...
+  {
+    name: "TTN Retail",
+    period: "07/2022 – 11/2024",
+    description:
+      "• Led the development of master websites for an eCommerce platform using AEM asa Cloud Service (AEMaaCS). Integrated React SPA, Adobe Campaign Standard, and AEM Analytics for personalized user experiences. • Successfully implemented Adobe Journey Optimizer to launch campaigns",
+    tech: ["AEMaaCS", "DeepL", "Dispatcher"],
+  },
+  {
+    name: "PWC Viewpoint",
+    period: "03/2023 – 11/2024",
+    description:
+      "Worked extensively on AEM Guides and Adobe XML Add-On for DITA-based content authoring to create a robust CMS for regulatory and technical content.",
+    tech: ["AEMaaCS", "DeepL", "Dispatcher"],
+  },
+  {
+    name: "Maxlife Product Launch Track",
+    period: "08/2019 – 06/2021 ",
+    description:
+      "Extensively worked on AEM Forms and integrated Billdesk and Paytm payment gateways, ensuring seamless server-to-server payment flows and secure transactions using Jose encryption.",
+    tech: ["AEMaaCS", "DeepL", "Dispatcher"],
+  }
 ];
 
 function ProjectCard({ project }) {

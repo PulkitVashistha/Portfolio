@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import aemLogo from "../assets/AEM.jpeg";
 
 function Certifications() {
   return (
@@ -8,7 +9,7 @@ function Certifications() {
       initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
       <h2 className="text-2xl font-semibold mb-4">Certifications</h2>
       <div className="flex items-center gap-4">
-        <img src="assets/aem-certificate-badge.png" alt="AEM Sites Developer Expert" className="w-16 h-16" />
+        <img src={aemLogo} alt="AEM Sites Developer Expert" className="w-16 h-16" />
         <div>
           <span className="font-bold">AEM Sites Developer Expert Certificate (08/2020–08/2026)</span>
           <br />
