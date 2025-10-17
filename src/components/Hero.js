@@ -37,7 +37,7 @@ export default function Hero() {
           <div className="flex gap-7 justify-center mt-5 mb-7">
             <a href="mailto:sharmapulkit43@gmail.com" title="Email"><img src={emailLogo} alt="Email" className="w-11 h-11 hover:scale-110 transition-transform" /></a>
             <a href="https://linkedin.com/in/pulkit-vashistha-a2361482" target="_blank" rel="noopener noreferrer" title="LinkedIn"><img src={linkedinLogo} alt="LinkedIn" className="w-11 h-11 hover:scale-110 transition-transform" /></a>
-            <a href="tel:+91XXXXXXXXXX" title="Phone"><img src={phoneLogo} alt="Phone" className="w-11 h-11 hover:scale-110 transition-transform" /></a>
+            <a href="tel:+919411670202" title="Phone"><img src={phoneLogo} alt="Phone" className="w-11 h-11 hover:scale-110 transition-transform" /></a>
           </div>
           {/* Advisor image centered and clickable, matches icon row width */}
           <a
