@@ -2,10 +2,15 @@ import React from "react";
 import { motion } from "framer-motion";
 import profilePic from "../assets/profile.JPG";
 import resumePdf from "../assets/resume.pdf";
+import adobeAdvisorImg from "../assets/adobe-community-advisor.jpeg";
+// Use your own SVGs or PNGs for these:
+import emailLogo from "../assets/email.jpeg";
+import linkedinLogo from "../assets/linkedin.png";
+import phoneLogo from "../assets/phone.jpeg";
 
 export default function Hero() {
   return (
-    <div className="w-full bg-indigo-50 pt-28 pb-10"> 
+    <div className="w-full bg-indigo-50 pt-28 pb-10">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center">
         {/* Text Section: LEFT */}
         <div className="flex-1 flex flex-col md:items-start items-center">
@@ -28,22 +33,27 @@ export default function Hero() {
           <p className="mt-2 text-base text-gray-700 md:text-left text-center">
             Senior AEM Developer | Gurugram, Haryana, India
           </p>
-          <motion.div
-            className="flex flex-wrap gap-6 mt-4 md:justify-start justify-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
+          {/* Icon Row */}
+          <div className="flex gap-7 justify-center mt-5 mb-7">
+            <a href="mailto:sharmapulkit43@gmail.com" title="Email"><img src={emailLogo} alt="Email" className="w-11 h-11 hover:scale-110 transition-transform" /></a>
+            <a href="https://linkedin.com/in/pulkit-vashistha-a2361482" target="_blank" rel="noopener noreferrer" title="LinkedIn"><img src={linkedinLogo} alt="LinkedIn" className="w-11 h-11 hover:scale-110 transition-transform" /></a>
+            <a href="tel:+91XXXXXXXXXX" title="Phone"><img src={phoneLogo} alt="Phone" className="w-11 h-11 hover:scale-110 transition-transform" /></a>
+          </div>
+          {/* Advisor image centered and clickable, matches icon row width */}
+          <a
+            href="https://experienceleaguecommunities.adobe.com/t5/user/viewprofilepage/user-id/16639683"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block mb-5"
+            style={{ width: '220px' }} // 3*44px icons + 2*28px gap approx
+            title="Adobe Community Advisor"
           >
-            <a href="mailto:sharmapulkit43@gmail.com" className="text-indigo-700 hover:text-indigo-500 transition">
-              Email
-            </a>
-            <a href="https://linkedin.com/in/pulkit-vashistha-a2361482" target="_blank" rel="noopener noreferrer" className="text-indigo-700 hover:text-indigo-500 transition">
-              LinkedIn
-            </a>
-            <a href="https://experienceleaguecommunities.adobe.com/t5/user/viewprofilepage/user-id/16639683" target="_blank" rel="noopener noreferrer" className="text-indigo-700 hover:text-indigo-500 transition">
-              Adobe Advisor
-            </a>
-          </motion.div>
+            <img
+              src={adobeAdvisorImg}
+              alt="Adobe Community Advisor"
+              className="rounded-xl w-full max-w-full shadow-lg border-4 border-white hover:scale-105 transition-transform"
+            />
+          </a>
         </div>
         {/* Image Section: RIGHT */}
         <div className="flex-1 flex flex-col items-center mt-10 md:mt-0">
